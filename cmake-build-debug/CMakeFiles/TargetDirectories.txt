@@ -1,0 +1,3 @@
+/Users/benjaminlewis-jones/Documents/GitHub/nom-nom/cmake-build-debug/CMakeFiles/nom_nom.dir
+/Users/benjaminlewis-jones/Documents/GitHub/nom-nom/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/benjaminlewis-jones/Documents/GitHub/nom-nom/cmake-build-debug/CMakeFiles/rebuild_cache.dir
