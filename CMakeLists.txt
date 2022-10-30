@@ -8,4 +8,5 @@ add_executable(nom_nom
         source/InputParser.cpp
         source/Tokenizer.cpp
         source/SymbolTable.cpp
-        source/ParseTree.cpp)
+        source/ParseTree.cpp
+        source/ThreeAddressLogicGenerator.cpp)

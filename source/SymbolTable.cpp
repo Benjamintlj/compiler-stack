@@ -4,6 +4,7 @@
 
 #include <regex>
 #include <iostream>
+#include <utility>
 
 #include "../headers/SymbolTable.h"
 
@@ -25,8 +26,6 @@ void SymbolTable::addNewSymbol(std::vector<std::string> line) {
 
     tokenTable.push_back(lineToBePushed);
 }
-
-
 
 std::vector<std::vector<Token>> SymbolTable::getTokenTable() {
     return tokenTable;
@@ -81,4 +80,12 @@ int SymbolTable::symbolType(const std::string& symbol) {
     std::string errorDescription = "ERROR Unknown Symbol: ";
     errorDescription.append(symbol);
     throw std::invalid_argument(errorDescription);
+}
+
+void SymbolTable::setparseTreeForEachLine(std::vector<Token> parseTreeVector) {
+    parseTreeForEachLine = std::move(parseTreeVector);
+}
+
+std::vector<Token> SymbolTable::getParseTreeForEachLine() {
+    return parseTreeForEachLine;
 }

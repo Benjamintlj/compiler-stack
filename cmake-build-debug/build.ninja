@@ -76,6 +76,12 @@ build CMakeFiles/nom_nom.dir/source/ParseTree.cpp.o: CXX_COMPILER__nom_nom_Debug
   OBJECT_DIR = CMakeFiles/nom_nom.dir
   OBJECT_FILE_DIR = CMakeFiles/nom_nom.dir/source
 
+build CMakeFiles/nom_nom.dir/source/ThreeAddressLogicGenerator.cpp.o: CXX_COMPILER__nom_nom_Debug /Users/benjaminlewis-jones/Documents/GitHub/nom-nom/source/ThreeAddressLogicGenerator.cpp || cmake_object_order_depends_target_nom_nom
+  DEP_FILE = CMakeFiles/nom_nom.dir/source/ThreeAddressLogicGenerator.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/nom_nom.dir
+  OBJECT_FILE_DIR = CMakeFiles/nom_nom.dir/source
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target nom_nom
@@ -84,7 +90,7 @@ build CMakeFiles/nom_nom.dir/source/ParseTree.cpp.o: CXX_COMPILER__nom_nom_Debug
 #############################################
 # Link the executable nom_nom
 
-build nom_nom: CXX_EXECUTABLE_LINKER__nom_nom_Debug CMakeFiles/nom_nom.dir/main.cpp.o CMakeFiles/nom_nom.dir/source/InputParser.cpp.o CMakeFiles/nom_nom.dir/source/Tokenizer.cpp.o CMakeFiles/nom_nom.dir/source/SymbolTable.cpp.o CMakeFiles/nom_nom.dir/source/ParseTree.cpp.o
+build nom_nom: CXX_EXECUTABLE_LINKER__nom_nom_Debug CMakeFiles/nom_nom.dir/main.cpp.o CMakeFiles/nom_nom.dir/source/InputParser.cpp.o CMakeFiles/nom_nom.dir/source/Tokenizer.cpp.o CMakeFiles/nom_nom.dir/source/SymbolTable.cpp.o CMakeFiles/nom_nom.dir/source/ParseTree.cpp.o CMakeFiles/nom_nom.dir/source/ThreeAddressLogicGenerator.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/nom_nom.dir
   POST_BUILD = :

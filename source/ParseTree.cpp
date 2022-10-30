@@ -25,6 +25,7 @@ int ParseTree::find(std::vector<Token> line, std::string val) {
 void ParseTree::createParseTreeLines() {
 
     vector<vector<Token>> fullSetOfTokens = symbolTable.getTokenTable();
+    vector<Token> output;
 
     // loop through lines
     for (int i = 0; i < fullSetOfTokens.size(); i++) {
@@ -52,12 +53,11 @@ void ParseTree::createParseTreeLines() {
 
             line.erase(line.begin() + it + 1);
             line.erase(line.begin() + it - 1);
-
-            for(auto i:line)
-                cout << i.content;
-            cout << endl;
         }
+
+        if (!line.empty())
+            output.push_back(line[0]);
     }
 
-    // set token table
+    symbolTable.setparseTreeForEachLine(output);
 }

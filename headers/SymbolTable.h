@@ -47,12 +47,14 @@ struct Token {
 class SymbolTable {
 private:
     std::vector<std::vector<Token>> tokenTable;
-
+    std::vector<Token> parseTreeForEachLine;
 public:
     SymbolTable();
     void addNewSymbol(std::vector<std::string> line);
     static int symbolType(const std::string& symbol);
     std::vector<std::vector<Token>> getTokenTable();
+    void setparseTreeForEachLine(std::vector<Token> parseTreeVector);
+    std::vector<Token> getParseTreeForEachLine();
 };
 
 
